@@ -31,4 +31,8 @@ public class LoginPageSteps {
 		Assert.assertTrue(login.validateErrorMessage());
 	}
 
+	@Then("Validate succesful login")
+	public void validate_unsuccesful_login() {
+	 Assert.assertTrue(login.validateSucessfulLogin());
+}
 }
